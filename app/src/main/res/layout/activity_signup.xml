@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupActivity">
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/shape"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="3dp"
+        android:textColor="#000"/>
+
+    <TextView
+
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Please register to create your account"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:hint="Name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingStart="18dp"
+        android:layout_below="@id/textViewSubtitle"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:hint="Email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingStart="18dp"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:hint="Address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingStart="18dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:id="@+id/editTextContactNo"
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:hint="Contact Number"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingStart="18dp"
+        android:layout_below="@id/editTextAddress"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:paddingStart="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/editTextContactNo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/background"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewAlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRegister"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account? "
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@id/textViewAlreadyRegistered"
+        android:layout_marginStart="-15dp"
+        android:layout_toEndOf="@id/textViewAlreadyRegistered"
+        android:background="@android:color/transparent"
+        android:text="Login"
+        android:textColor="#3F51B5"
+        android:textSize="14sp" />
+
+</RelativeLayout>

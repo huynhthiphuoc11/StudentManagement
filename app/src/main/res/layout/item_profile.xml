@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:layout_below="@+id/profile_image"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/student_name"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp" />
+    <!-- School and Class -->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvEmail"
+            android:padding="10dp">
+
+
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:id="@+id/tvContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="@color/black"
+
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ClassName"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@color/black"
+
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Code"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+</RelativeLayout>

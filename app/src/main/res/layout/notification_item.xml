@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <!-- Thêm các TextView khác để hiển thị thông tin khác của thông báo -->
+    <TextView
+        android:id="@+id/sentDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentTextView"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sentDateTextView"
+        android:textSize="16sp" />
+
+    <!-- Thêm các thành phần khác tùy thuộc vào dữ liệu bạn muốn hiển thị -->
+</RelativeLayout>

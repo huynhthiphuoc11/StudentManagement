@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="student_status_choices">
+        <item>Present</item>
+        <item>Absent</item>
+        <item>Late</item>
+    </string-array>
+    <string-array name="semesters_array">
+        <item>Học kì 1</item>
+        <item>Học kì 2</item>
+
+    </string-array>
+    <string-array name="class_array">
+        <item>22JIT</item>
+        <item>22GIT</item>
+
+    </string-array>
+    <string-array name="course_array">
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+    </string-array>
+</resources>
